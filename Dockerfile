@@ -7,9 +7,11 @@ ENV PATH $GOPATH/bin:/usr/local/go/bin:$PATH
 RUN apt-get update && apt-get install -y \
     chromium-browser \
     firefox \
+    git \
     golang-go \
     python-pip \
     unzip \
+    vim \
     wget \
     xvfb
 
