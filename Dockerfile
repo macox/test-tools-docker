@@ -27,6 +27,8 @@ RUN wget https://chromedriver.storage.googleapis.com/2.37/chromedriver_linux64.z
     chmod a+x /usr/bin/chromedriver && \
     rm -rf chromedriver_*.zip
 
+RUN pip install --upgrade pip
+
 RUN pip install selenium
 
 RUN go get github.com/DATA-DOG/godog/cmd/godog
