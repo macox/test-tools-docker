@@ -16,7 +16,7 @@ RUN apt-get update && apt-get install -y \
     xvfb
 
 RUN wget https://github.com/mozilla/geckodriver/releases/download/v0.18.0/geckodriver-v0.18.0-linux64.tar.gz && \
-    tar -xvzf geckodriver-v0.18.0-linux64.tar.gz geckodriver-v0.18.0-linux64 && \
+    tar -xvzf geckodriver-v0.18.0-linux64.tar.gz && \
     mv geckodriver geckodriver-v0.18.0-linux64 && \
     chmod a+x geckodriver-v0.18.0-linux64 && \
     rm geckodriver-v0.18.0-linux64.tar.gz
